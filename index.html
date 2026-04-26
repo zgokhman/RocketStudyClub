@@ -343,12 +343,13 @@
     font-weight: 600;
     padding: 3px 10px;
     border-radius: 100px;
-    background: rgba(232,160,48,0.12);
+    background: rgba(232,160,48,0.15);
     color: var(--accent2);
+    border: 1px solid rgba(232,160,48,0.25);
     letter-spacing: 0.04em;
   }
 
-  .member-role.lead { background: rgba(232,160,48,0.25); color: var(--accent); }
+  .member-role.lead { background: rgba(232,160,48,0.15); color: var(--accent2); border: 1px solid rgba(232,160,48,0.25); }
 
   #resources { background: var(--navy); }
 
@@ -629,32 +630,29 @@
 <section id="members">
   <div class="section-inner">
     <div class="section-header">
-      <div class="section-eyebrow">Our Roster</div>
-      <h2>Club members</h2>
+      <div class="section-eyebrow" style="display:none">Our Roster</div>
+      <h2>Club officers</h2>
       <p class="section-desc">Our group brings together general dentists and specialists united by a passion for lifelong learning.</p>
     </div>
     <div class="members-grid">
 
       <div class="member-card">
-        <div class="member-avatar">ZG</div>
-        <div class="member-name">Dr. Zachary Gokhman</div>
-        <div class="member-title">Vice President</div>
-        <div class="member-interest">Biomimetic Dentistry</div>
-        <span class="member-role lead">Founder & Vice President</span>
-      </div>
-
-      <div class="member-card">
         <div class="member-avatar">OK</div>
         <div class="member-name">Dr. Olivia Kutlesa</div>
-        <div class="member-title">President</div>
         <div class="member-interest">Airway Dentistry & Craniofacial Development</div>
         <span class="member-role">President</span>
       </div>
 
       <div class="member-card">
+        <div class="member-avatar">ZG</div>
+        <div class="member-name">Dr. Zachary Gokhman</div>
+        <div class="member-interest">Biomimetic Dentistry</div>
+        <span class="member-role lead">Vice President</span>
+      </div>
+
+      <div class="member-card">
         <div class="member-avatar">AS</div>
         <div class="member-name">Dr. Aashil Shah</div>
-        <div class="member-title">Vice President</div>
         <div class="member-interest">Practice Management & the Business of Dentistry</div>
         <span class="member-role">Vice President</span>
       </div>
@@ -662,7 +660,6 @@
       <div class="member-card">
         <div class="member-avatar">HL</div>
         <div class="member-name">Dr. Haley Leatherbarrow</div>
-        <div class="member-title">Director of Membership</div>
         <div class="member-interest">Community Oral Health & Health Equity</div>
         <span class="member-role">Director of Membership</span>
       </div>
@@ -670,7 +667,6 @@
       <div class="member-card">
         <div class="member-avatar">SG</div>
         <div class="member-name">Dr. Sai Guntaka</div>
-        <div class="member-title">Secretary & Treasurer</div>
         <div class="member-interest">Advanced Cariology & Caries Management</div>
         <span class="member-role">Secretary & Treasurer</span>
       </div>
@@ -678,7 +674,6 @@
       <div class="member-card">
         <div class="member-avatar">AK</div>
         <div class="member-name">Dr. Andrew Kim</div>
-        <div class="member-title">Director of Outreach</div>
         <div class="member-interest">Interprofessional Healthcare Collaboration</div>
         <span class="member-role">Director of Outreach</span>
       </div>
@@ -686,7 +681,6 @@
       <div class="member-card">
         <div class="member-avatar">PK</div>
         <div class="member-name">Dr. Pardis Khosravi</div>
-        <div class="member-title">Director of Education</div>
         <div class="member-interest">Minimally Invasive Dentistry & Preventive Care</div>
         <span class="member-role">Director of Education</span>
       </div>
@@ -729,20 +723,6 @@
         <div class="resource-title">Calendar Subscription</div>
         <div class="resource-desc">Subscribe to the Rocket Study Club calendar to get all events automatically synced to your device.</div>
         <a href="#" class="resource-link">Subscribe (.ics) →</a>
-      </div>
-
-      <div class="resource-card">
-        <div class="resource-icon">🏅</div>
-        <div class="resource-title">CE Credit Tracker</div>
-        <div class="resource-desc">Log your attendance and generate CE credit certificates for your records.</div>
-        <a href="#" class="resource-link">Track credits →</a>
-      </div>
-
-      <div class="resource-card">
-        <div class="resource-icon">📋</div>
-        <div class="resource-title">Speaker Guidelines</div>
-        <div class="resource-desc">Information for members interested in presenting a case or leading a literature review.</div>
-        <a href="#" class="resource-link">Download guide →</a>
       </div>
 
     </div>
