@@ -352,8 +352,9 @@
   .member-role.lead { background: rgba(232,160,48,0.15); color: var(--accent2); border: 1px solid rgba(232,160,48,0.25); }
 
   #resources { background: var(--navy); }
+  .resources-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; width: 100%; }
 
-  .resources-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+  .resources-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; width: 100%; }
 
   .resource-card {
     background: rgba(255,255,255,0.03);
@@ -362,6 +363,8 @@
     padding: 24px;
     transition: border-color 0.2s, background 0.2s;
     cursor: pointer;
+    min-width: 0;
+    width: 100%;
   }
 
   .resource-card:hover { border-color: rgba(232,160,48,0.3); background: rgba(232,160,48,0.04); }
@@ -683,6 +686,12 @@
         <div class="member-interest" style="font-style:normal;">We're growing — become a founding member of the Rocket Study Club.</div>
         <a href="#contact" class="member-role" style="text-decoration:none; cursor:pointer;">Join Us →</a>
       </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="resources">
   <div class="section-inner">
     <div class="section-header">
       <div class="section-eyebrow">Member Resources</div>
@@ -742,7 +751,7 @@
           <div class="contact-icon">📆</div>
           <div>
             <div class="contact-label">Meeting Frequency</div>
-            <div class="contact-value">Typically twice monthly — check schedule for dates</div>
+            <div class="contact-value">Every other month — check schedule for dates</div>
           </div>
         </div>
         <div class="contact-item">
