@@ -517,16 +517,8 @@
     </div>
     <div class="hero-stats">
       <div>
-        <div class="hero-stat-num">20+</div>
-        <div class="hero-stat-label">Active members</div>
-      </div>
-      <div>
-        <div class="hero-stat-num">2×</div>
-        <div class="hero-stat-label">Monthly meetings</div>
-      </div>
-      <div>
         <div class="hero-stat-num">CE</div>
-        <div class="hero-stat-label">Credits available</div>
+        <div class="hero-stat-label">Accreditation Pending</div>
       </div>
     </div>
   </div>
@@ -536,7 +528,7 @@
   <div class="section-inner">
     <div class="section-header">
       <div class="section-eyebrow">Our Mission</div>
-      <h2>🚀 Why We Meet</h2>
+      <h2>🚀 Why We Study</h2>
     </div>
     <div class="mission-grid">
       <div class="mission-text">
@@ -685,11 +677,12 @@
         <span class="member-role">Director of Education</span>
       </div>
 
-    </div>
-  </div>
-</section>
-
-<section id="resources">
+      <div class="member-card" style="border-style: dashed; border-color: rgba(232,160,48,0.3); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px;">
+        <div class="member-avatar" style="font-size:24px; background:rgba(232,160,48,0.08);">🚀</div>
+        <div class="member-name">Become a Member</div>
+        <div class="member-interest" style="font-style:normal;">We're growing — become a founding member of the Rocket Study Club.</div>
+        <a href="#contact" class="member-role" style="text-decoration:none; cursor:pointer;">Join Us →</a>
+      </div>
   <div class="section-inner">
     <div class="section-header">
       <div class="section-eyebrow">Member Resources</div>
@@ -763,20 +756,29 @@
 
       <form class="contact-form" onsubmit="return false;">
         <div class="form-row">
-          <input type="text" placeholder="First name">
-          <input type="text" placeholder="Last name">
+          <input type="text" placeholder="First name" id="fname">
+          <input type="text" placeholder="Last name" id="lname">
         </div>
-        <input type="email" placeholder="Email address">
-        <input type="text" placeholder="Specialty / Practice type">
-        <select>
+        <input type="email" placeholder="Email address" id="femail">
+        <input type="text" placeholder="Specialty / Practice type" id="fspecialty">
+        <select id="freason">
           <option value="" disabled selected>Reason for reaching out</option>
           <option>Interested in joining</option>
           <option>Question about an upcoming lecture</option>
           <option>Interested in presenting</option>
           <option>General inquiry</option>
         </select>
-        <textarea placeholder="Tell us a bit about yourself and your interest in the club…"></textarea>
-        <button type="submit" class="btn-submit">Send Message 🚀</button>
+        <textarea placeholder="Tell us a bit about yourself and your interest in the club…" id="fmessage"></textarea>
+        <button type="button" class="btn-submit" onclick="
+          var fname = document.getElementById('fname').value;
+          var lname = document.getElementById('lname').value;
+          var email = document.getElementById('femail').value;
+          var specialty = document.getElementById('fspecialty').value;
+          var reason = document.getElementById('freason').value;
+          var message = document.getElementById('fmessage').value;
+          var body = 'Name: ' + fname + ' ' + lname + '\nEmail: ' + email + '\nSpecialty: ' + specialty + '\nReason: ' + reason + '\n\n' + message;
+          window.location.href = 'mailto:rocketstudyclub@gmail.com?subject=Rocket Study Club Inquiry&body=' + encodeURIComponent(body);
+        ">Send Message 🚀</button>
       </form>
     </div>
   </div>
